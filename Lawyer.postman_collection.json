@@ -217,6 +217,36 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "revoketoken",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/common/revoketoken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"common",
+								"revoketoken"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
